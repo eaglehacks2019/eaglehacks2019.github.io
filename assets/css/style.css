@@ -355,12 +355,14 @@ nav select {
 
 
 section#intro {
-	background: #000 url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
+	background: #0b0b0b url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
 	position:relative;
 	width:100%;
 	height:auto;
 	margin:0;
-	padding:240px 0 120px;
+	padding:240px 0 0 0;
+	/* padding:240px 0 120px; */
+	text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -378,11 +380,6 @@ section#intro.inner h2 strong  {
 }
 section#intro.inner h2  {
 	font-size:32px;
-}
-
-
-section#intro  {
-	text-align:center;
 }
 
 section#intro i  {
@@ -693,6 +690,7 @@ ul.the-icons {
 	padding:6px;
     font-size: 16px;
     line-height: 20px;
+    text-decoration: none;
 }
 .icon-48 {
     width: 32px;
@@ -780,7 +778,7 @@ ul.the-icons {
 
 /* ================= services ============================ */
 section#services {
-	background: url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
+	background: #0b0b0b url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;
@@ -812,7 +810,7 @@ section#services {
 	margin-bottom:0;
 }
 
-/*========== works ==================*/
+/*========== faq ==================*/
 
 ul.filter {
 	list-style:none;
@@ -1302,7 +1300,7 @@ img.pull-left{
 	}
 	nav ul li {
 		display:none;
-	}
+	}/*
     nav select {
       display: block;
 	  width:50%;
@@ -1317,7 +1315,7 @@ img.pull-left{
           border-radius: 4px;
 		font-size:14px;
     }
-
+*/
     nav select  a {
 		line-height:1.5em;
     }
@@ -1342,7 +1340,7 @@ img.pull-left{
 
 @media (max-width: 480px) {
 
-
+/*
     nav select {
       display: inline-block;
 	  width:85%;
@@ -1355,7 +1353,7 @@ img.pull-left{
           border-radius: 4px;
 		font-size:14px;
 	}
-
+*/
 	section#intro{
 		padding:180px 0 20px;
 	}
@@ -1373,4 +1371,87 @@ img.pull-left{
 	.tweet span {
 		line-height:1.5em;
 	}
+}
+/* === * Jimmy's Addon * === */
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+/* === Itinerary Section === */
+section#itinerary {
+	background: #1D1E42;
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:80px 0 120px 0;
+	/* padding:240px 0 120px; */
+}
+
+@media (min-width: 1024px) {
+	section#itinerary {
+		background-attachment: fixed;
+	}
+}
+
+section#itinerary.inner {
+	padding:140px 0 30px;
+}
+
+section#itinerary.inner h2 strong  {
+	color:#fff;
+}
+section#itinerary.inner h2  {
+	font-size:32px;
+}
+
+
+section#itinerary  {
+	text-align:center;
+}
+
+section#itinerary i  {
+	margin-left:0;
+	text-align:center;
+}
+
+section#itinerary h1  {
+	color:#fff;
+	font-size:64px;
+	font-weight:700;
+	padding-bottom: 20px;
+}
+section#itinerary h2  {
+	color:#ddd;
+	font-size:24px;
+}
+
+/* === Section Addon === */
+.link {
+	color: #0af;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sponsor {
+	color: #fff;
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 1em;
+	margin-top: -100px;
+}
+section#faq {
+	padding-top: 80px;
 }
